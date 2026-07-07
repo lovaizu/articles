@@ -39,60 +39,60 @@ Rn version: 0.8.0
 
 # Tasks
 
-### #1: Create LICENSE with the official CC BY 4.0 legal code
+### #1: CC BY 4.0 公式全文で LICENSE を作成
 
-**Purpose**: Add the official, unmodified CC BY 4.0 (Creative Commons Attribution 4.0 International) legal code as `LICENSE` at repo root.
+**目的**: CC BY 4.0（Creative Commons Attribution 4.0 International）の公式・無改変の法的文書を `LICENSE` としてリポジトリルートに追加する。
 
-**Prerequisites**: none
+**前提**: なし
 
-**Steps**:
+**手順**:
 
-- [ ] Fetch the official CC BY 4.0 legal code text from creativecommons.org
-- [ ] Write it verbatim to `LICENSE` at repo root
-- [ ] self-check (OK/NG per completion criterion, record in checks/1.md)
-- [ ] QA expert review (subagent)
-- [ ] Craft expert review (subagent, per the task's medium — legal/writing text)
-- [ ] Verification expert review (subagent, per the task's medium)
+- [ ] creativecommons.org から CC BY 4.0 の公式法的文書テキストを取得
+- [ ] リポジトリルートの `LICENSE` に一字一句そのまま記載
+- [ ] self-check（完了基準ごとに OK/NG を判定し checks/1.md に記録）
+- [ ] QA expert review（サブエージェント）
+- [ ] Craft expert review（サブエージェント、当該タスクのメディア種別＝法的/文章に応じて）
+- [ ] Verification expert review（サブエージェント、当該タスクのメディア種別に応じて）
 
-**Completion criteria**:
+**完了基準**:
 
-- `LICENSE` at repo root contains the complete, unmodified CC BY 4.0 International legal code, matching the official creativecommons.org text exactly (no summary, no paraphrase, no omitted sections)
-- No unrelated content (other licenses, commentary) is present in the file
+- リポジトリルートの `LICENSE` に、CC BY 4.0 International の完全かつ無改変の法的文書が、creativecommons.org の公式テキストと完全一致する形で収録されている（要約・言い換え・省略なし）
+- 無関係な内容（他のライセンス、コメント等）がファイル内に存在しない
 
-### #2: Create CLAUDE.md documenting the repository's operating policy
+### #2: リポジトリ運営方針を記載した CLAUDE.md を作成
 
-**Purpose**: Author `CLAUDE.md` at repo root in English, capturing every policy point specified by the user (positioning, purpose, distribution targets & languages, directory structure, per-article deliverable set, publishing flow, writing-language policy, and the CC BY 4.0 / future-MIT-for-code note).
+**目的**: ユーザーが指定した全方針（位置づけ、目的、配信先と言語、ディレクトリ構成、記事ごとの成果物セット、公開フロー、執筆言語の方針、CC BY 4.0／将来のコードMIT分離の注記）を網羅した `CLAUDE.md` を英語でリポジトリルートに作成する。
 
-**Prerequisites**: none
+**前提**: なし
 
-**Steps**:
+**手順**:
 
-- [ ] Draft `CLAUDE.md` covering: project positioning, purpose, distribution & language policy, directory structure (with the example tree), per-article deliverable set (ja.md/en.md/social.md incl. X/LinkedIn conventions), publishing flow, writing-language policy, and the license note (articles under CC BY 4.0; future code-heavy split to MIT noted)
-- [ ] Cross-check every bullet against the user's original policy list in the session goal to ensure nothing is dropped or invented
-- [ ] self-check (OK/NG per completion criterion, record in checks/2.md)
-- [ ] QA expert review (subagent)
-- [ ] Craft expert review (subagent, per the task's medium — writing)
-- [ ] Verification expert review (subagent, per the task's medium)
+- [ ] `CLAUDE.md` の草稿作成：プロジェクトの位置づけ、目的、配信先と言語の方針、ディレクトリ構成（例のツリーを含む）、記事ごとの成果物セット（ja.md/en.md/social.md、X/LinkedInの規約を含む）、公開フロー、執筆言語の方針、ライセンスに関する注記（記事はCC BY 4.0対象、将来コードが多くなった場合はコード部分のみMIT分離の可能性）をカバー
+- [ ] セッションのGoalにあるユーザーの原方針リストと全項目を照合し、漏れや追加がないことを確認
+- [ ] self-check（完了基準ごとに OK/NG を判定し checks/2.md に記録）
+- [ ] QA expert review（サブエージェント）
+- [ ] Craft expert review（サブエージェント、当該タスクのメディア種別＝文章に応じて）
+- [ ] Verification expert review（サブエージェント、当該タスクのメディア種別に応じて）
 
-**Completion criteria**:
+**完了基準**:
 
-- `CLAUDE.md` exists at repo root, written in English, and every policy point listed in the Goal/Acceptance criteria is present and accurately represented
-- No policy is invented or altered beyond what the user specified
+- リポジトリルートに `CLAUDE.md` が存在し、英語で記述されており、Goal/Acceptance criteria に列挙された全ての方針項目が正確に反映されている
+- ユーザーが指定した範囲を超える方針の創作や改変がない
 
-### #3: Evaluation sign-off
+### #3: 評価サインオフ
 
-**Purpose**: Present the finished LICENSE + CLAUDE.md against the Acceptance criteria for the user's verdict.
+**目的**: 完成した LICENSE + CLAUDE.md を Acceptance criteria に照らしてユーザーの判定を仰ぐ。
 
-**Prerequisites**: #1, #2
+**前提**: #1, #2
 
-**Steps**:
+**手順**:
 
-- [ ] Present the Acceptance criteria run result to the user
-- [ ] Take the verdict via /rn:ty (approve) or /rn:gm (revise → address the feedback, re-present)
+- [ ] Acceptance criteria の照合結果をユーザーに提示
+- [ ] /rn:ty（承認）または /rn:gm（修正 → フィードバック対応後、再提示）で判定を受け取る
 
-**Completion criteria**:
+**完了基準**:
 
-- The Acceptance criteria run is approved by the user
+- Acceptance criteria の照合結果がユーザーに承認されている
 
 # State
 
