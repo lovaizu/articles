@@ -87,7 +87,7 @@ Rn version: 0.8.0
 
 **手順**:
 
-- [ ] Acceptance criteria の照合結果をユーザーに提示
+- [x] Acceptance criteria の照合結果をユーザーに提示
 - [ ] /rn:ty（承認）または /rn:gm（修正 → フィードバック対応後、再提示）で判定を受け取る
 
 **完了基準**:
@@ -96,8 +96,8 @@ Rn version: 0.8.0
 
 # State
 
-(written by /rn:dn, read and reset to this placeholder by /rn:up. `Status` is `paused` while a
-session is suspended — the signal /rn:up and /rn:dn search for — and resets to `not suspended` here,
-so only a genuinely suspended session reads `paused`.)
-
-- **Status**: not suspended
+- **Status**: paused
+- **Date**: 2026-07-08
+- **Last completed**: #2 CLAUDE.md作成（task check-off済み、コミット `3c239fe`）
+- **Next**: #3 評価サインオフの判定待ち — `/rn:ty`（承認 → セッションクローズ）または `/rn:gm`（修正指示）
+- **Notes**: Acceptance criteria 6項目の照合結果をユーザーに提示済み（全て✅）。draft PR: https://github.com/lovaizu/articles/pull/1。
