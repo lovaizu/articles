@@ -96,8 +96,8 @@ Rn version: 0.8.0
 
 # State
 
-- **Status**: not suspended
+- **Status**: paused
 - **Date**: 2026-07-07
 - **Last completed**: (none yet)
-- **Next**: #1 Create LICENSE with the official CC BY 4.0 legal code
-- **Notes**: none
+- **Next**: plan-gate approval (`/rn:ty` or `/rn:gm`), then #1 Create LICENSE with the official CC BY 4.0 legal code
+- **Notes**: Branch `repo-foundations` committed locally but not pushed — `git push -u origin repo-foundations` failed with `403 Permission denied to kiyobot` on `https://github.com/lovaizu/articles.git` (gh auth is otherwise valid). No draft PR exists yet. Open question posed to user, unanswered: grant `kiyobot` write access to `lovaizu/articles`, push under a different account, or proceed without a PR (local commits only)? Once resolved, push the branch, open the draft PR, then take the plan-gate sign-off before starting #1.
