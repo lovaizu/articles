@@ -47,12 +47,12 @@ Rn version: 0.8.0
 
 **手順**:
 
-- [ ] creativecommons.org から CC BY 4.0 の公式法的文書テキストを取得
-- [ ] リポジトリルートの `LICENSE` に一字一句そのまま記載
-- [ ] self-check（完了基準ごとに OK/NG を判定し checks/1.md に記録）
-- [ ] QA expert review（サブエージェント）
-- [ ] Craft expert review（サブエージェント、当該タスクのメディア種別＝法的/文章に応じて）
-- [ ] Verification expert review（サブエージェント、当該タスクのメディア種別に応じて）
+- [x] creativecommons.org から CC BY 4.0 の公式法的文書テキストを取得
+- [x] リポジトリルートの `LICENSE` に一字一句そのまま記載
+- [x] self-check（完了基準ごとに OK/NG を判定し checks/1.md に記録）
+- [x] QA expert review（サブエージェント）
+- [x] Craft expert review（サブエージェント、当該タスクのメディア種別＝法的/文章に応じて）
+- [x] Verification expert review（サブエージェント、当該タスクのメディア種別に応じて）
 
 **完了基準**:
 
