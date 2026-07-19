@@ -96,8 +96,12 @@ Rn version: 0.8.0
 
 # State
 
-- **Status**: paused
-- **Date**: 2026-07-08
-- **Last completed**: #2 CLAUDE.md作成（task check-off済み、コミット `3c239fe`）
-- **Next**: #3 評価サインオフの判定待ち — `/rn:ty`（承認 → セッションクローズ）または `/rn:gm`（修正指示）
-- **Notes**: Acceptance criteria 6項目の照合結果をユーザーに提示済み（全て✅）。draft PR: https://github.com/lovaizu/articles/pull/1。
+(written by /rn:dn, read and reset to this placeholder by /rn:up. `Status` is `paused` while a
+session is suspended — the signal /rn:up and /rn:dn search for — and resets to `not suspended` here,
+so only a genuinely suspended session reads `paused`.)
+
+- **Status**: not suspended
+- **Date**: YYYY-MM-DD
+- **Last completed**: #N description
+- **Next**: #N description
+- **Notes**: bounded forward pointer — branch/PR, next concrete action, open blockers, user-deferred paths, open questions / pending decisions not yet captured in `design.md`; not a re-narration of the session (that lives in `git log`)
