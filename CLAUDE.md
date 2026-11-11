@@ -1,8 +1,8 @@
-# CLAUDE.md
+# `CLAUDE.md`
 
 This file records the operating conventions for this repository. Follow it when creating, editing, or organizing content here.
 
-## Project Positioning
+## Project positioning
 
 This repository is a publishing base for the owner's personal output. It is scoped to small-scale outputs such as articles. Larger deliverables (e.g. applications) belong in their own separate projects, not in this repository.
 
@@ -13,7 +13,7 @@ This repository exists to help the owner get freelance work under their own name
 - Content is published in **English** to reach a global audience.
 - Content is published in **Japanese** to reach a domestic (Japan) audience.
 
-## Distribution Targets & Language Policy
+## Distribution targets and language policy
 
 - **Zenn** is the canonical distribution platform for Japanese content.
 - **dev.to** is the canonical distribution platform for English content.
@@ -21,7 +21,7 @@ This repository exists to help the owner get freelance work under their own name
 - Canonical URL consideration only becomes necessary when the *same-language* article is cross-posted to additional platforms beyond its canonical one (e.g. the same English article posted to more than one English-language platform).
 - **Medium is excluded** from distribution targets because it does not support Mermaid diagrams.
 
-## Directory Structure
+## Directory structure
 
 - Each article gets its own directory, named `YYYYMMDD-slug` (a date prefix plus a title slug), e.g. `20260707-my-first-article`.
 - Article directories live directly at the repository root — they are not nested under an `articles/` subdirectory (the repository itself is already named `articles`, so no extra `articles/` subfolder is used).
@@ -44,22 +44,22 @@ Example directory tree:
     └── social.md
 ```
 
-## Per-Article Deliverable Set
+## Per-article deliverable set
 
 Each article directory must contain:
 
-- **`ja.md`** — the Japanese article body (see Writing-Language Policy).
-- **`en.md`** — the English article body (see Writing-Language Policy).
+- **`ja.md`** — the Japanese article body (see Writing-language policy).
+- **`en.md`** — the English article body (see Writing-language policy).
 - **`social.md`** — social post copy, containing:
   - **X (Twitter)**: separate Japanese and English posts. Each post includes the key points, a link, and 1–2 hashtags.
   - **LinkedIn**: an English-language repost or summary of the article body, plus a link (intended to be placed in a comment rather than the post body), plus 3–5 hashtags.
 
-## Publishing Flow
+## Publishing flow
 
 - There is no automated publishing. Content is manually copy-pasted into each target platform.
 - The markdown files in this repository are the single source of truth and are managed centrally here.
 
-## Writing-Language Policy
+## Writing-language policy
 
 Public articles that a human reviews are each written as an original in their own language:
 
