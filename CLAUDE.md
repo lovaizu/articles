@@ -4,7 +4,7 @@ This file records the operating conventions for this repository. Follow it when 
 
 ## Project positioning
 
-This repository is a publishing base for the owner's personal output. It is scoped to small-scale outputs such as articles. Larger deliverables (e.g. applications) belong in their own separate projects, not in this repository.
+This repository is a publishing base for the owner's personal output, and its scope is small-scale outputs such as articles. Larger deliverables, such as applications, belong in their own separate projects, not in this repository.
 
 ## Purpose
 
@@ -18,12 +18,12 @@ This repository exists to help the owner get freelance work under their own name
 - **Zenn** is the canonical distribution platform for Japanese content.
 - **dev.to** is the canonical distribution platform for English content.
 - Japanese and English versions of an article are treated as separate content, not as translations of one another that need a shared canonical, so no canonical conflict arises between the Japanese and English versions.
-- Canonical URL consideration only becomes necessary when the *same-language* article is cross-posted to additional platforms beyond its canonical one (e.g. the same English article posted to more than one English-language platform).
+- You need to consider canonical URLs only when an article is cross-posted to additional platforms in the *same* language beyond its canonical one: for example, when the same English article is posted to more than one English-language platform.
 - **Medium is excluded** from distribution targets because it does not support Mermaid diagrams.
 
 ## Directory structure
 
-- Each article gets its own directory, named `YYYYMMDD-slug` (a date prefix plus a title slug), e.g. `20260707-my-first-article`.
+- Each article gets its own directory, named `YYYYMMDD-slug`, which is a date prefix plus a title slug. For example, `20260707-my-first-article`.
 - Article directories live directly at the repository root — they are not nested under an `articles/` subdirectory (the repository itself is already named `articles`, so no extra `articles/` subfolder is used).
 - The Japanese and English versions of an article live together in the same directory — they are not split into separate language directories.
 - Each article directory contains three files: `ja.md`, `en.md`, and `social.md`.
