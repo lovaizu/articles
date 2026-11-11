@@ -1,0 +1,26 @@
+# The lefthook settings of this repository, which lefthook.yml of
+# lovaizu/repofiles extends.
+glob_matcher: doublestar
+
+# An article holds ja.md in Japanese, en.md in English, and social.md with
+# posts in both languages, so social.md goes to both jobs. Each other file
+# that holds prose, such as the README and the comments of this file, is in
+# English.
+pre-commit:
+  jobs:
+    - name: english
+      exclude:
+        - "**/ja.md"
+    - name: japanese
+      glob:
+        - "**/ja.md"
+        - "**/social.md"
+
+# The Issues and pull requests of this repository are in English, so the
+# Claude Code hook checks their texts with the job english alone. With both
+# languages on, it would also give them to textlint, which reads them as
+# Japanese.
+claude-code:
+  jobs:
+    - name: claude-code
+      args: english
