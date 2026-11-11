@@ -17,3 +17,12 @@ pre-commit:
       glob:
         - "**/ja.md"
         - "**/social.md"
+
+# The Issues and pull requests of this repository are in English, so the
+# Claude Code hook checks their texts with the job english alone. With both
+# languages on, it would also give them to textlint, which reads them as
+# Japanese.
+claude-code:
+  jobs:
+    - name: claude-code
+      args: english
