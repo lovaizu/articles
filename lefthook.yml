@@ -1,0 +1,27 @@
+# The checks that lovaizu repositories share, from lovaizu/checks, before
+# each commit. Run `lefthook install` once in each clone to turn them on.
+# The workflow Tests runs them on each push, at the commit in
+# .github/workflows/tests.yml.
+glob_matcher: doublestar
+remotes:
+  - git_url: https://github.com/lovaizu/checks
+    ref: v0.2.0
+    configs:
+      - english.yml
+      - japanese.yml
+
+# An article holds ja.md in Japanese, en.md in English, and social.md with
+# posts in both languages, so social.md goes to both jobs. Each other file
+# that holds prose, such as the README and the comments of this file, is in
+# English. LICENSE is the legal text of CC BY 4.0, not prose of this
+# repository.
+pre-commit:
+  jobs:
+    - name: english
+      exclude:
+        - "**/ja.md"
+        - LICENSE
+    - name: japanese
+      glob:
+        - "**/ja.md"
+        - "**/social.md"
