@@ -11,7 +11,7 @@ This repository is a publishing base for the owner's personal output, and its sc
 This repository exists to help the owner get freelance work under their own name ("ByName"). It serves as the publishing/output base for that goal:
 
 - Content is published in **English** to reach a global audience.
-- Content is published in **Japanese** to reach a domestic (Japan) audience.
+- Content is published in **Japanese** to reach a domestic audience in Japan.
 
 ## Distribution targets and language policy
 
@@ -19,7 +19,7 @@ This repository exists to help the owner get freelance work under their own name
 - **dev.to** is the canonical distribution platform for English content.
 - Japanese and English versions of an article are treated as separate content, not as translations of one another that need a shared canonical, so no canonical conflict arises between the Japanese and English versions.
 - You need to consider canonical URLs only when an article is cross-posted to additional platforms in the *same* language beyond its canonical one: for example, when the same English article is posted to more than one English-language platform.
-- **Medium is excluded** from distribution targets because it does not support Mermaid diagrams.
+- **Medium is excluded** from distribution targets because it doesn't support Mermaid diagrams.
 
 ## Directory structure
 
@@ -27,7 +27,7 @@ This repository exists to help the owner get freelance work under their own name
 - Article directories live directly at the repository root, not nested under an `articles/` subdirectory. The repository itself is already named `articles`, so it uses no extra `articles/` subfolder.
 - The Japanese and English versions of an article live together in the same directory, not split into separate language directories.
 - Each article directory contains three files: `ja.md`, `en.md`, and `social.md`.
-- There is no `assets` directory. Diagrams are managed as Mermaid diagrams embedded in the markdown itself, not as separate image assets, in principle.
+- There is no `assets` directory. In principle, diagrams are managed as Mermaid diagrams embedded in the markdown itself, not as separate image assets.
 - A `published` flag in each file's front matter tracks its state: draft or published. Files are never moved between draft and published directories. The directory location doesn't encode publication state.
 
 Example directory tree:
@@ -52,7 +52,7 @@ Each article directory must contain:
 - **`en.md`**: the English article body. See Writing-language policy.
 - **`social.md`**: social post copy, which contains the following:
   - **X (Twitter)**: separate Japanese and English posts. Each post includes the key points, a link, and 1–2 hashtags.
-  - **LinkedIn**: an English-language repost or summary of the article body, plus a link (intended to be placed in a comment rather than the post body), plus 3–5 hashtags.
+  - **LinkedIn**: an English-language repost or summary of the article body, a link, and 3–5 hashtags. The link is intended to go in a comment rather than in the post body.
 
 ## Publishing flow
 
