@@ -24,11 +24,11 @@ This repository exists to help the owner get freelance work under their own name
 ## Directory structure
 
 - Each article gets its own directory, named `YYYYMMDD-slug`, which is a date prefix plus a title slug. For example, `20260707-my-first-article`.
-- Article directories live directly at the repository root — they are not nested under an `articles/` subdirectory (the repository itself is already named `articles`, so no extra `articles/` subfolder is used).
-- The Japanese and English versions of an article live together in the same directory — they are not split into separate language directories.
+- Article directories live directly at the repository root, not nested under an `articles/` subdirectory. The repository itself is already named `articles`, so it uses no extra `articles/` subfolder.
+- The Japanese and English versions of an article live together in the same directory, not split into separate language directories.
 - Each article directory contains three files: `ja.md`, `en.md`, and `social.md`.
 - There is no `assets` directory. Diagrams are managed as Mermaid diagrams embedded in the markdown itself, not as separate image assets, in principle.
-- State (draft vs. published) is tracked via a `published` flag in each file's front matter. Files are never moved between draft and published directories — the directory location does not encode publication state.
+- A `published` flag in each file's front matter tracks its state: draft or published. Files are never moved between draft and published directories. The directory location doesn't encode publication state.
 
 Example directory tree:
 
@@ -48,9 +48,9 @@ Example directory tree:
 
 Each article directory must contain:
 
-- **`ja.md`** — the Japanese article body (see Writing-language policy).
-- **`en.md`** — the English article body (see Writing-language policy).
-- **`social.md`** — social post copy, containing:
+- **`ja.md`**: the Japanese article body. See Writing-language policy.
+- **`en.md`**: the English article body. See Writing-language policy.
+- **`social.md`**: social post copy, which contains the following:
   - **X (Twitter)**: separate Japanese and English posts. Each post includes the key points, a link, and 1–2 hashtags.
   - **LinkedIn**: an English-language repost or summary of the article body, plus a link (intended to be placed in a comment rather than the post body), plus 3–5 hashtags.
 
@@ -71,4 +71,4 @@ Neither version is a translation of the other.
 ## License
 
 - Article bodies in this repository are licensed under **CC BY 4.0** (see `LICENSE`).
-- If this repository comes to contain a significant amount of code snippets in the future, the code portions specifically may be split out and licensed under **MIT** separately. This is a forward-looking note only — no such split exists today.
+- If this repository comes to contain a significant amount of code snippets in the future, the code portions specifically may be split out and licensed under **MIT** separately. This note only looks ahead: no such split exists today.
